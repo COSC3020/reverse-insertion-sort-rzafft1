@@ -37,3 +37,9 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+--> The best-case complexity of reverse insertion sort is still O(n), because if you try sorting a sorted array, only one for loop (the first for loop) in our code will run since the already sorted array will never meet the conditions of the second for loop. The first for loop increments n times, with n being the size of the array, therefore the best case complexity of reverse insertion sort is O(n) with n as the size of the array. An example of the best-case scenario is the sorted list in decreasing order. 
+
+--> The worst-case complexity of reverse insertion sort is also O(n^2) since we are running two for loops, and both for loops increment n times. An example of this would be a sorted list, since the second for loop conditions would be met through every pass. 
+
+--> The average-case complexity here would then be O(n^2) because unless we have a sorted list, both for loops will be executed at least once meaning we have an average case complexity of O(n^2). In order for the average complexity to be less than O(n^2) we would be assuming that the list on average, is sorted, however, realistically, the average list here will not be completely sorted, therefore, without making any assumptions, the average complexity is )(n^2)
